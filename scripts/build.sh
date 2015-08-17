@@ -9,11 +9,12 @@ rm -rf build/$WAR build/web
 cp -rf web build/web
 
 # Compile Java code
-CP=.:/home/michel/apache-tomcat-8.0.20/lib/servlet-api.jar
+JAR_SERVLET=/home/michel/apache-tomcat-8.0.20/lib/servlet-api.jar
+JAR_JSP=/home/michel/apache-tomcat-8.0.20/lib/jsp-api.jar
 D=build/web/WEB-INF/classes
 SRC=src/com/michelpm/*.java
 mkdir -p $D
-javac -cp $CP -d $D $SRC
+javac -cp $JAR_SERVLET:$JAR_JSP -d $D $SRC
 
 if [ $? -eq 1 ]
 then

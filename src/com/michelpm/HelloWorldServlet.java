@@ -32,10 +32,10 @@ public class HelloWorldServlet extends javax.servlet.http.HttpServlet {
       writer.println("  <head>");
       writer.println("    <meta charset=\"utf-8\">");
       writer.println("    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">");
-      writer.println("    <title>Hello World</title>");
+      writer.println("    <title>Hello World - Servlet</title>");
       writer.println("  </head>");
       writer.println("  <body>");
-      writer.println("    <h1>Hello World</h1>");
+      writer.println("    <h1>Hello World from Servlet!</h1>");
       writer.println("    <p>Quod Erat Demonstrandum</p>");
       writer.println("  </body>");
       writer.println("</html>");
