@@ -4,10 +4,11 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-Edge">
-    <title>Hello World - JSP</title>
+    <title>Hello World - JSP (with includes)</title>
   </head>
   <body>
-    <h1>Hello World from JSP!</h1>
+    <%@ include file="header.jsp" %>
     <p>Quod Erat Demonstrandum</p>
+    <%@ include file="footer.jsp" %>
   </body>
 </html>
