@@ -20,8 +20,16 @@
     <servlet-name>servlet</servlet-name>
     <url-pattern>/servlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>jsperror</servlet-name>
+    <servlet-class>com.michelpm.ExceptionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>jsperror</servlet-name>
+    <url-pattern>/jsperror</url-pattern>
+  </servlet-mapping>
   <error-page>
-    <exception>com.michelpm.HelloWorldException</exception>
-    <location>/jsperror/error.html</location>
+    <exception-type>com.michelpm.HelloWorldException</exception-type>
+    <location>/WEB-INF/jsperror/error.html</location>
   </error-page>
 </web-app>

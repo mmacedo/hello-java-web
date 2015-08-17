@@ -1,6 +1,6 @@
 package com.michelpm;
 
-public class HelloWorldException extends Exception {
+public class HelloWorldException extends javax.servlet.ServletException {
   public HelloWorldException() {
   }
 
@@ -14,9 +14,5 @@ public class HelloWorldException extends Exception {
 
   public HelloWorldException(String message, Throwable cause) {
     super(message, cause);
-  }
-
-  public static void boom() throws HelloWorldException {
-    throw new HelloWorldException();
   }
 }
